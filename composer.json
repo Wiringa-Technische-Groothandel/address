@@ -1,0 +1,20 @@
+{
+    "name": "wtg/address",
+    "description": "Address module for WTG/webshop",
+    "authors": [
+        {
+            "name": "Thomas Wiringa",
+            "email": "thomas.wiringa@gmail.com"
+        }
+    ],
+    "autoload": {
+        "psr-4": {
+            "WTG\\Address\\": "src/"
+        }
+    },
+    "require": {
+        "php": ">=7.0",
+        "illuminate/support": "5.4.*",
+        "webpatser/laravel-uuid": "2.*"
+    }
+}
