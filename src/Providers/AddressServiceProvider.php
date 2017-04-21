@@ -3,6 +3,8 @@
 namespace WTG\Address\Providers;
 
 use Illuminate\Support\ServiceProvider;
+use WTG\Address\Interfaces\AddressInterface;
+use WTG\Address\Models\Address;
 
 /**
  * Address service provider
@@ -30,6 +32,6 @@ class AddressServiceProvider extends ServiceProvider
      */
     public function register()
     {
-        //
+        $this->app->bind(AddressInterface::class, Address::class);
     }
 }
